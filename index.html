@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            height: 667px;
+            width: 668px;
+            display: grid;
+            grid-template-columns: 150px 450px 50px;
+            grid-template-rows: 190px 250px 100px 100px;
+            background-color: black;
+            gap: 9px;
+        }
+        .item{
+            background-color: #F0F1EC;
+        }
+        .white1{
+            grid-area: 1/1/2/2;
+            border-bottom: 10px solid black;
+        }
+        .red{
+            grid-area: 1/2/3/4;
+            background-color: red;
+        }
+        .blue{
+            grid-area: 3/1/5/2;
+            background-color: blue;
+        }
+        .white3{
+            grid-area: 3/2/5/3;
+        }
+        .yellow{
+            grid-area: 4/3/5/4;
+            background-color: yellow;
+        }
+        .white4{
+            grid-area: 3/3/4/4;
+            border-bottom: 10px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--HTML Part-->
+    <div class="content">
+        <div class="item"></div>
+        <div class="item white1"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item red"></div>
+        <div class="item blue"></div>
+        <div class="item yellow"></div>
+        <div class=" item white4"></div>
+    </div>
+</body>
+</html>
